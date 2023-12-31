@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to left,#56fa3a,#48d2a5);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+
+}
+
+input , button{
+    font-size: inherit;
+    padding: 0.4rem;
+    margin-top: 1.34rem;
+}
+
+.container{
+    border: solid;
+    max-width: 550px;
+    margin: 200px auto;
+    min-height: 270px;
+    padding: 2rem;
+    border-radius: 34px;
+    background: linear-gradient(to right,#5679f3,#8dabff);
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.heading{
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: #f81a1a;
+}
+
+.heading::first-letter{
+    font-size: larger;
+    font-family: cursive;
+}
+
+.result-heading{
+    line-height: 1.5;
+    font-family: monospace;
+    font-weight: 700;
+    margin-top: 1.67rem;
+    border-radius: 4.5px;
+    font-size: larger;
+    min-height: 1rem;
+    max-width: 36ch;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 36ch;
+    }
+  }
+
+  /* Apply the animation to an element with class .typing */
+  .typing {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 9s steps(36) infinite alternate-reverse forwards;
+  }
